@@ -83,24 +83,39 @@ class Demo {
         let app: Application;
         let factory: GUIFactory;
 
-        if (os === 'macos'){
-            factory = new MacOSFactory();
-        } else {
-            factory = new WindowsFactory();
+        switch (os){
+            case osType.mac:
+                factory = new MacOSFactory();
+                app = new Application(factory);
+                break;
+            case osType.win:
+                factory = new WindowsFactory();
+                app = new Application(factory);
+                break;
+            default:
+                console.log('provided OS is not supported')
         }
 
-        app = new Application(factory);
 
-        return app;
+
+        return app ? app : null;
     }
 
 
     constructor(os: string){
         this.app = Demo.configureApplication(os);
-        this.app.paint();
+        this.app ? this.app.paint() : null;
 
     }
 }
 
-new Demo('macos');
-new Demo('win');
+enum osType {
+    mac = 'macos',
+    win = 'windows'
+
+}
+
+new Demo(osType.mac);
+new Demo(osType.win);
+
+new Demo('linux');

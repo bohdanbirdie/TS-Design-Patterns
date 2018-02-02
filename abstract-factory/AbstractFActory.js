@@ -66,21 +66,32 @@ var Application = /** @class */ (function () {
 var Demo = /** @class */ (function () {
     function Demo(os) {
         this.app = Demo.configureApplication(os);
-        this.app.paint();
+        this.app ? this.app.paint() : null;
     }
     Demo.configureApplication = function (os) {
         var app;
         var factory;
-        if (os === 'macos') {
-            factory = new MacOSFactory();
+        switch (os) {
+            case osType.mac:
+                factory = new MacOSFactory();
+                app = new Application(factory);
+                break;
+            case osType.win:
+                factory = new WindowsFactory();
+                app = new Application(factory);
+                break;
+            default:
+                console.log('provided OS is not supported');
         }
-        else {
-            factory = new WindowsFactory();
-        }
-        app = new Application(factory);
-        return app;
+        return app ? app : null;
     };
     return Demo;
 }());
-new Demo('macos');
-new Demo('win');
+var osType;
+(function (osType) {
+    osType["mac"] = "macos";
+    osType["win"] = "windows";
+})(osType || (osType = {}));
+new Demo(osType.mac);
+new Demo(osType.win);
+new Demo('linux');

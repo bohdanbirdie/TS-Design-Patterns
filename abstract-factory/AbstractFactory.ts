@@ -112,7 +112,6 @@ class Demo {
 enum osType {
     mac = 'macos',
     win = 'windows'
-
 }
 
 new Demo(osType.mac);

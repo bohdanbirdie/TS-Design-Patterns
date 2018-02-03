@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="88ea7c24-4587-43de-b56b-c6163e61d3cf" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/Prototype/Prototype.ts" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Singleton/Singleton.ts" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/builder/builder" afterPath="$PROJECT_DIR$/builder/builder" />
+      <change beforePath="$PROJECT_DIR$/Singleton/Singleton.ts" afterPath="$PROJECT_DIR$/Singleton/Singleton.ts" />
+      <change beforePath="$PROJECT_DIR$/builder/builder.js" afterPath="$PROJECT_DIR$/builder/builder.ts" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -20,21 +17,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Singleton.ts" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Singleton.ts" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Singleton/Singleton.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="33" lean-forward="false" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="33" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="835">
-              <caret line="71" column="4" lean-forward="false" selection-start-line="71" selection-start-column="4" selection-end-line="71" selection-end-column="4" />
+            <state relative-caret-position="375">
+              <caret line="25" column="23" lean-forward="true" selection-start-line="25" selection-start-column="23" selection-end-line="25" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -71,8 +58,9 @@
         <option value="$PROJECT_DIR$/abstract-factory/AbstractFactory.ts" />
         <option value="$PROJECT_DIR$/builder/builder" />
         <option value="$PROJECT_DIR$/Prototype.ts" />
-        <option value="$PROJECT_DIR$/Singleton/Singleton.ts" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/builder/builder.js" />
+        <option value="$PROJECT_DIR$/Singleton/Singleton.ts" />
       </list>
     </option>
   </component>
@@ -107,6 +95,11 @@
             <path>
               <item name="TS-Design-Patterns" type="b2602c69:ProjectViewProjectNode" />
               <item name="TS-Design-Patterns" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TS-Design-Patterns" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TS-Design-Patterns" type="462c0819:PsiDirectoryNode" />
+              <item name="builder" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -151,12 +144,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1517603668204</updated>
-      <workItem from="1517603670054" duration="7435000" />
+      <workItem from="1517603670054" duration="7982000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7435000" />
+    <option name="totallyTimeSpent" value="7982000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
@@ -186,7 +179,6 @@
     <option name="version" value="1" />
     <option name="exactExcludedFiles">
       <list>
-        <option value="$PROJECT_DIR$/abstract-factory/AbstractFActory.js" />
         <option value="$PROJECT_DIR$/Singleton/Singleton.js" />
       </list>
     </option>
@@ -223,14 +215,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/builder/builder.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="67" column="20" lean-forward="false" selection-start-line="67" selection-start-column="20" selection-end-line="67" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/builder/builder">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -263,18 +247,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Singleton/Singleton.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="33" lean-forward="false" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="835">
           <caret line="71" column="4" lean-forward="false" selection-start-line="71" selection-start-column="4" selection-end-line="71" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/builder/builder.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1110">
+          <caret line="74" column="29" lean-forward="true" selection-start-line="74" selection-start-column="29" selection-end-line="74" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Singleton/Singleton.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" column="23" lean-forward="true" selection-start-line="25" selection-start-column="23" selection-end-line="25" selection-end-column="23" />
           <folding />
         </state>
       </provider>
